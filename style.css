@@ -1,0 +1,84 @@
+/* Basic Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background : white;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(180deg, rgb(200,200,400), white);;
+}
+
+.logo {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.company-contact p {
+  margin: 5px 0;
+}
+
+main {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.venture-btn {
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s;
+  background: white;
+}
+
+.venture-btn:hover {
+  background: black;;
+}
+h2 {
+  background: linear-gradient(180deg, lime,white );;
+}
+footer {
+  background: linear-gradient(180deg, white, rgb(192,197,366));
+  text-align: center;
+  padding: 20px;
+}
+
+.card {
+width: 320px;
+height: 80px;
+position: relative;
+display: flex;
+place-items: center;
+place-content: center;
+overflow: hidden;
+border-radius: 5px;
+}
+.card h2 {
+  color: black;
+  font-size: 2em;
+}
+
+.card::after, .card::before {
+  content: '';
+  width: 370px;
+  position: absolute;
+  background: linear-gradient(180deg, violet, white);
+  height: 80px;
+  z-index: -1;
+  top: 3%;
+  left: 0%;
+  translate: -3% -3% ;
+}
